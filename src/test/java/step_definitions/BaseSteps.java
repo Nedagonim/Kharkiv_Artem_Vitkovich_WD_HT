@@ -40,7 +40,7 @@ public class BaseSteps {
         searchPage.search.sendKeys(SearchPage.SOMETHING, Keys.ENTER);
         searchPage.pictures.click();
         searchPage.picture.click();
-        assertTrue(searchPage.result.getText().contains(SearchPage.SOMETHING));
+        assertTrue(searchPage.result.isDisplayed());
     }
 
 
